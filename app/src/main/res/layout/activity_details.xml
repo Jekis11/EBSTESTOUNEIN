@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1D1D1"
+    tools:context=".ui.details.DetailsActivity"
+    tools:ignore="MissingDefaultResource,ScrollViewCount">
+
+
+    <ImageView
+        android:id="@+id/idIVCourse"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="InvalidId" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idIVCourse">
+
+        <TextView
+            android:id="@+id/nameebs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="#F6F6F6"
+            android:fontFamily="@font/opensanseextrabold"
+            android:gravity="center"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="8dp"
+            android:text="Xiaomi Redmi Note 8"
+            android:textColor="@color/BLAU"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="InvalidId,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/priceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F6F6F6"
+            android:fontFamily="@font/opensanseextrabold"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:text="$ 8000"
+            android:textColor="#148EC5"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            tools:ignore="InvalidId,MissingConstraints" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvInformationTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="#F6F6F6"
+        android:fontFamily="@font/opensanseextrabold"
+        android:paddingStart="12dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="12dp"
+        android:text="INFORMATION"
+        android:textColor="@color/BLAU"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:ignore="InvalidId,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvInformationDetails"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:background="#F6F6F6"
+        android:fontFamily="@font/opensanseextrabold"
+        android:minHeight="48dp"
+        android:paddingStart="10sp"
+        android:paddingTop="3dp"
+        android:paddingBottom="2dp"
+        android:scrollbars="vertical"
+        android:text="bla-bla-bla..."
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInformationTitle" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:elevation="10dp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingTop="6dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnAddToCart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#4C68E3"
+            android:text="Add to cart"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnBuyNow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:backgroundTint="#901AF6"
+            android:text="Buy now"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
